@@ -45,7 +45,7 @@ function createSearch () {
 				searchTerm += searchArray[i] +" "
 			}
 		} else {
-			searchTerm = "The Sign Ace of Base";
+			searchTerm = "The Sign";
 		}
 	} else if(command === "movie-this"){
 		if(searchArray.length > 3) {
@@ -65,7 +65,7 @@ function createSearch () {
 }
 
 function twitter (){
-	var params = {screen_name: 'gc8ftw'};
+	var params = {screen_name: 'robmines'};
 	twitterKeys.get('statuses/user_timeline', params, function(error, tweets, response) {
 		if (!error) {
 			for (var i = 0; i < tweets.length; i++){
